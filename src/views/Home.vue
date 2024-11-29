@@ -2,28 +2,28 @@
   <div class="container mx-auto px-4 py-8">
     <div class="bg-green-800 text-white rounded-lg p-12 mb-12">
       <div class="text-center">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">Bagad Penhars</h1>
-        <p class="text-xl md:text-2xl">Musique traditionnelle bretonne</p>
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">{{ $t('home.title') }}</h1>
+        <p class="text-xl md:text-2xl">{{ $t('home.subtitle') }}</p>
       </div>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
       <div class="bg-white rounded-lg shadow-lg p-6">
-        <h2 class="text-2xl font-bold mb-4">Actualités</h2>
-        <p class="mb-4">Découvrez nos dernières actualités et événements à venir.</p>
-        <router-link to="/actualites" class="text-green-800 hover:text-green-600">En savoir plus →</router-link>
+        <h2 class="text-2xl font-bold mb-4">{{ $t('home.news') }}</h2>
+        <p class="mb-4">{{ $t('home.news_desc') }}</p>
+        <router-link to="/actualites" class="text-green-800 hover:text-green-600">{{ $t('home.more') }} →</router-link>
       </div>
 
       <div class="bg-white rounded-lg shadow-lg p-6">
-        <h2 class="text-2xl font-bold mb-4">École de musique</h2>
-        <p class="mb-4">Apprenez la musique traditionnelle bretonne avec nos formateurs.</p>
-        <router-link to="/ecole" class="text-green-800 hover:text-green-600">En savoir plus →</router-link>
+        <h2 class="text-2xl font-bold mb-4">{{ $t('home.school') }}</h2>
+        <p class="mb-4">{{ $t('home.school_desc') }}</p>
+        <router-link to="/ecole" class="text-green-800 hover:text-green-600">{{ $t('home.more') }} →</router-link>
       </div>
 
       <div class="bg-white rounded-lg shadow-lg p-6">
-        <h2 class="text-2xl font-bold mb-4">Nous rejoindre</h2>
-        <p class="mb-4">Envie de faire partie de l'aventure ? Contactez-nous !</p>
-        <router-link to="/contact" class="text-green-800 hover:text-green-600">En savoir plus →</router-link>
+        <h2 class="text-2xl font-bold mb-4">{{ $t('home.join') }}</h2>
+        <p class="mb-4">{{ $t('home.join_desc') }}</p>
+        <router-link to="/contact" class="text-green-800 hover:text-green-600">{{ $t('home.more') }} →</router-link>
       </div>
     </div>
 

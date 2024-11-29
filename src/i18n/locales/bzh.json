@@ -1,0 +1,20 @@
+{
+  "menu": {
+    "home": "Degemer",
+    "news": "Keleier",
+    "presentation": "Kinnig",
+    "school": "Skol",
+    "contact": "Darempred"
+  },
+  "home": {
+    "title": "Bagad Penhars",
+    "subtitle": "Sonerezh hengounel Breizh",
+    "news": "Keleier",
+    "news_desc": "Dizoloit hon keleier diwezhañ hag darvoudoù da zont.",
+    "school": "Skol sonerezh",
+    "school_desc": "Deskit sonerezh hengounel Breizh gant hor c'helennerien.",
+    "join": "Deuit ganeomp",
+    "join_desc": "C'hoant ho peus da gemer perzh en avantur ? Deuit e darempred ganeomp!",
+    "more": "Gouzout hiroc'h"
+  }
+}

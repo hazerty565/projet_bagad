@@ -1,0 +1,20 @@
+{
+  "menu": {
+    "home": "Home",
+    "news": "News",
+    "presentation": "About",
+    "school": "School",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Bagad Penhars",
+    "subtitle": "Traditional Breton Music",
+    "news": "News",
+    "news_desc": "Discover our latest news and upcoming events.",
+    "school": "Music School",
+    "school_desc": "Learn traditional Breton music with our teachers.",
+    "join": "Join Us",
+    "join_desc": "Want to be part of the adventure? Contact us!",
+    "more": "Learn more"
+  }
+}

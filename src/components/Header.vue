@@ -14,38 +14,42 @@
               class="hover:text-green-200 transition-colors duration-200"
               :class="{ 'text-green-200': isCurrentRoute(item.path) }"
             >
-              {{ item.name }}
+              {{ $t(`menu.${item.translationKey}`) }}
             </router-link>
           </nav>
+          <LanguageSelector />
         </div>
 
         <!-- Menu mobile -->
-        <button 
-          @click="isMenuOpen = !isMenuOpen"
-          class="md:hidden p-2 hover:bg-green-700 rounded"
-        >
-          <svg 
-            class="w-6 h-6" 
-            fill="none" 
-            stroke="currentColor" 
-            viewBox="0 0 24 24"
+        <div class="md:hidden flex items-center space-x-4">
+          <LanguageSelector />
+          <button 
+            @click="isMenuOpen = !isMenuOpen"
+            class="p-2 hover:bg-green-700 rounded"
           >
-            <path 
-              v-if="!isMenuOpen" 
-              stroke-linecap="round" 
-              stroke-linejoin="round" 
-              stroke-width="2" 
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-            <path 
-              v-else 
-              stroke-linecap="round" 
-              stroke-linejoin="round" 
-              stroke-width="2" 
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </button>
+            <svg 
+              class="w-6 h-6" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path 
+                v-if="!isMenuOpen" 
+                stroke-linecap="round" 
+                stroke-linejoin="round" 
+                stroke-width="2" 
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+              <path 
+                v-else 
+                stroke-linecap="round" 
+                stroke-linejoin="round" 
+                stroke-width="2" 
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
 
@@ -63,7 +67,7 @@
           :class="{ 'text-green-200': isCurrentRoute(item.path) }"
           @click="isMenuOpen = false"
         >
-          {{ item.name }}
+          {{ $t(`menu.${item.translationKey}`) }}
         </router-link>
       </div>
     </div>
@@ -73,16 +77,17 @@
 <script setup>
 import { ref } from 'vue'
 import { useRoute } from 'vue-router'
+import LanguageSelector from './LanguageSelector.vue'
 
 const route = useRoute()
 const isMenuOpen = ref(false)
 
 const menuItems = [
-  { path: '/', name: 'Accueil' },
-  { path: '/actualites', name: 'Actualités' },
-  { path: '/presentation', name: 'Présentation' },
-  { path: '/ecole', name: 'École' },
-  { path: '/contact', name: 'Contact' }
+  { path: '/', translationKey: 'home' },
+  { path: '/actualites', translationKey: 'news' },
+  { path: '/presentation', translationKey: 'presentation' },
+  { path: '/ecole', translationKey: 'school' },
+  { path: '/contact', translationKey: 'contact' }
 ]
 
 const isCurrentRoute = (path) => {

@@ -1,0 +1,20 @@
+{
+  "menu": {
+    "home": "Accueil",
+    "news": "Actualités",
+    "presentation": "Présentation",
+    "school": "École",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Bagad Penhars",
+    "subtitle": "Musique traditionnelle bretonne",
+    "news": "Actualités",
+    "news_desc": "Découvrez nos dernières actualités et événements à venir.",
+    "school": "École de musique",
+    "school_desc": "Apprenez la musique traditionnelle bretonne avec nos formateurs.",
+    "join": "Nous rejoindre",
+    "join_desc": "Envie de faire partie de l'aventure ? Contactez-nous !",
+    "more": "En savoir plus"
+  }
+}
